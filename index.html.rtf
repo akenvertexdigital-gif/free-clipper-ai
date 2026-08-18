@@ -1,0 +1,242 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>FreeClip - Unlimited AI Video Clipping</title>\
+    <style>\
+        :root \{\
+            --bg-color: #0b0c10;\
+            --card-bg: #1f2833;\
+            --accent-color: #00ffcc;\
+            --text-main: #ffffff;\
+            --text-muted: #c5c6c7;\
+        \}\
+\
+        * \{\
+            box-sizing: border-box;\
+            margin: 0;\
+            padding: 0;\
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+        \}\
+\
+        body \{\
+            background-color: var(--bg-color);\
+            color: var(--text-main);\
+            line-height: 1.6;\
+            padding-bottom: 60px;\
+        \}\
+\
+        header \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+            padding: 20px 5%;\
+            border-bottom: 1px solid #1f2833;\
+        \}\
+\
+        .logo \{\
+            font-size: 1.5rem;\
+            font-weight: bold;\
+            color: var(--accent-color);\
+            text-decoration: none;\
+        \}\
+\
+        .hero \{\
+            text-align: center;\
+            padding: 80px 5%;\
+            max-width: 800px;\
+            margin: 0 auto;\
+        \}\
+\
+        .hero h1 \{\
+            font-size: 3rem;\
+            margin-bottom: 20px;\
+            background: linear-gradient(45deg, #ffffff, var(--accent-color));\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+\
+        .hero p \{\
+            color: var(--text-muted);\
+            font-size: 1.2rem;\
+            margin-bottom: 40px;\
+        \}\
+\
+        .url-box \{\
+            display: flex;\
+            background: var(--card-bg);\
+            padding: 6px;\
+            border-radius: 30px;\
+            border: 2px solid #2f3b4c;\
+            margin-bottom: 60px;\
+            transition: border-color 0.3s;\
+        \}\
+\
+        .url-box:focus-within \{\
+            border-color: var(--accent-color);\
+        \}\
+\
+        .url-box input \{\
+            flex: 1;\
+            background: transparent;\
+            border: none;\
+            outline: none;\
+            color: white;\
+            padding: 0 20px;\
+            font-size: 1rem;\
+        \}\
+\
+        .url-box button \{\
+            background: var(--accent-color);\
+            color: var(--bg-color);\
+            border: none;\
+            outline: none;\
+            padding: 12px 30px;\
+            border-radius: 25px;\
+            font-weight: bold;\
+            cursor: pointer;\
+            transition: opacity 0.3s;\
+        \}\
+\
+        .url-box button:hover \{\
+            opacity: 0.9;\
+        \}\
+\
+        .pricing-container \{\
+            display: flex;\
+            justify-content: center;\
+            padding: 0 5%;\
+            max-width: 1200px;\
+            margin: 0 auto;\
+        \}\
+\
+        .price-card \{\
+            background: var(--card-bg);\
+            border: 2px solid var(--accent-color);\
+            border-radius: 20px;\
+            padding: 40px;\
+            width: 100%;\
+            max-width: 450px;\
+            display: flex;\
+            flex-direction: column;\
+            position: relative;\
+            text-align: center;\
+        \}\
+\
+        .badge \{\
+            position: absolute;\
+            top: 20px;\
+            right: 20px;\
+            background: var(--accent-color);\
+            color: var(--bg-color);\
+            padding: 4px 12px;\
+            border-radius: 12px;\
+            font-size: 0.75rem;\
+            font-weight: bold;\
+        \}\
+\
+        .price-card h2 \{\
+            font-size: 2rem;\
+            margin-bottom: 10px;\
+        \}\
+\
+        .price \{\
+            font-size: 3rem;\
+            font-weight: bold;\
+            margin-bottom: 25px;\
+            color: var(--accent-color);\
+        \}\
+\
+        .bullet-list \{\
+            list-style: none;\
+            margin-bottom: 35px;\
+            text-align: left;\
+            display: inline-block;\
+            margin: 0 auto 35px auto;\
+        \}\
+\
+        .bullet-list li \{\
+            margin-bottom: 15px;\
+            color: var(--text-muted);\
+            display: flex;\
+            align-items: center;\
+            font-size: 1.1rem;\
+        \}\
+\
+        .bullet-list li::before \{\
+            content: "\uc0\u10003 ";\
+            color: var(--accent-color);\
+            margin-right: 12px;\
+            font-weight: bold;\
+        \}\
+\
+        .cta-btn \{\
+            display: block;\
+            text-align: center;\
+            background: var(--accent-color);\
+            color: var(--bg-color);\
+            padding: 16px;\
+            border-radius: 30px;\
+            text-decoration: none;\
+            font-weight: bold;\
+            font-size: 1.1rem;\
+            transition: all 0.3s;\
+        \}\
+\
+        .cta-btn:hover \{\
+            background: transparent;\
+            color: var(--accent-color);\
+            border: 2px solid var(--accent-color);\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .hero h1 \{ font-size: 2rem; \}\
+            .url-box \{ flex-direction: column; border-radius: 15px; \}\
+            .url-box input \{ padding: 15px; text-align: center; \}\
+            .url-box button \{ width: 100%; border-radius: 10px; \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <header>\
+        <a href="#" class="logo">FreeClip.ai</a>\
+    </header>\
+\
+    <section class="hero">\
+        <h1>Unlimited AI Video Clipping for Free</h1>\
+        <p>Paste your link below to jump directly into the generator dashboard workspace.</p>\
+        \
+        <form class="url-box" onsubmit="event.preventDefault(); window.open('https://creator.reka.ai/', '_blank');">\
+            <input type="url" placeholder="Paste YouTube link here..." required>\
+            <button type="submit">Clip Now</button>\
+        </form>\
+    </section>\
+\
+    <section class="pricing-container">\
+        <div class="price-card">\
+            <span class="badge">Active</span>\
+            <h2>Unlimited Free Plan</h2>\
+            <div class="price">$0<span style="font-size: 1rem; color: var(--text-muted);">/forever</span></div>\
+            <ul class="bullet-list">\
+                <li>Unlimited credits/mo</li>\
+                <li>YouTube & file uploads</li>\
+                <li>Custom font captions</li>\
+                <li>1080p high quality rendering profile</li>\
+                <li>No system watermarks</li>\
+            </ul>\
+            <a href="https://creator.reka.ai/" target="_blank" class="cta-btn">Start Clipping Instantly</a>\
+        </div>\
+    </section>\
+\
+</body>\
+</html>\
+}
